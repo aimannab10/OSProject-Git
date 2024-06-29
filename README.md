@@ -29,10 +29,8 @@ Team Mates:
 https://github.com/aimannab10/OSProject-Git/blob/main/README.md
 ```
 2. How many files and folders are in this repository. ***(1 mark)*** 
-```bash
-1 file and 3 folder
-```
 
+1 file and 3 folder
 
 ## Exploring github codespaces
 
@@ -64,13 +62,15 @@ https://github.com/aimannab10/OSProject-Git/blob/main/README.md
 ***Questions:***
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)***
-```bash
+
 Linux-based distribution, typically Ubuntu
-```
+
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
-```bash
-Option 1 is 2 cores, 4 GB RAM, 32 GB SSD and option 2 is 4 cores, 8 GB RAM, 64 GB SSD
-```
+
+a. Option 1 is 2 cores, 4 GB RAM, 32 GB SSD 
+
+b. Option 2 is 4 cores, 8 GB RAM, 64 GB SSD
+
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
 ```bash
 The changes are save and versioned allow to keep track modifications over time. This ensure backup of the work are safeguarded against data loss due to failures
