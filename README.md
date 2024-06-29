@@ -512,22 +512,23 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 ***Questions:***
 
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** 
+
+Permission: drwxrwxrwx+
+
+Owner: Root
 ```bash
 @aimannab10 ➜ /workspaces/OSProject-Git (main) $ docker exec -it 111337b18742 bash
 root@111337b18742:/usr/local/apache2# ls -ld /usr/local/apache2/htdocs
 drwxrwxrwx+ 2 root root 4096 Jun 26 06:46 /usr/local/apache2/htdocs
-
-Permission: drwxrwxrwx+
-Owner: Root
 ```
 2. What port is the apache web server running. ***(1 mark)*** 
-```bash
-8080
-```
+
+    __8080__.
+
 3. What port is open for http protocol on the host machine? ***(1 mark)*** 
-```bash
-8080
-```
+
+    __8080__.
+
 
 ## Create SUB Networks
 
@@ -548,14 +549,14 @@ docker run -itd --net rednet --name c2 busybox sh
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** 
 
-BusyBox
-```bash
+__BusyBox__
+
 Software suite that provides several Unix utilities in a single executable file. It is commonly used in Docker containers because it provides essential tools in a lightweight package, reducing the container's footprint and improving performance.
-```
-Docker '--name' command switch 
-```bash
+
+__Docker '--name' command switch__ 
+
 The --name command switch in Docker is used to assign a specific name to a container. By default, Docker assigns a random, often whimsical name to each container if a name is not explicitly provided.
-```
+
 
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
 ```bash
