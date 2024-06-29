@@ -549,13 +549,13 @@ docker run -itd --net rednet --name c2 busybox sh
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** 
 
-__BusyBox__
+    __BusyBox__
 
-Software suite that provides several Unix utilities in a single executable file. It is commonly used in Docker containers because it provides essential tools in a lightweight package, reducing the container's footprint and improving performance.
+    Software suite that provides several Unix utilities in a single executable file. It is commonly used in Docker containers because it provides essential tools in a lightweight package, reducing the container's footprint and improving performance.
 
-__Docker '--name' command switch__ 
+    __Docker '--name' command switch__ 
 
-The --name command switch in Docker is used to assign a specific name to a container. By default, Docker assigns a random, often whimsical name to each container if a name is not explicitly provided.
+    The --name command switch in Docker is used to assign a specific name to a container. By default, Docker assigns a random, often whimsical name to each container if a name is not explicitly provided.
 
 
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
