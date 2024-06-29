@@ -479,7 +479,7 @@ total 0
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 ```
-__Yes__. 
+__Yes__
 
 ```bash
 @aimannab10 ➜ /workspaces/OSProject-Git (main) $ ls -l /workspaces/OSProject/myroot
@@ -1107,7 +1107,7 @@ PING c2 (172.20.0.3): 56 data bytes
 
 2. What is different from the previous ping in the section above? ***(1 mark)*** 
 
-__The difference between the two ping attempts is that the initial ping fails due to network isolation, while the second ping succeeds due to the bridging network (bridgenet) enabling communication between the previously isolated containers__.
+    __The difference between the two ping attempts is that the initial ping fails due to network isolation, while the second ping succeeds due to the bridging network (bridgenet) enabling communication between the previously isolated containers__.
 
 ## Intermediate Level (10 marks bonus)
 
