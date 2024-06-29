@@ -30,7 +30,7 @@ https://github.com/aimannab10/OSProject-Git/blob/main/README.md
 ```
 2. How many files and folders are in this repository. ***(1 mark)*** 
 
-1 file and 3 folder
+    __1 file and 3 folder__.
 
 ## Exploring github codespaces
 
@@ -63,18 +63,18 @@ https://github.com/aimannab10/OSProject-Git/blob/main/README.md
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)***
 
-Linux-based distribution, typically Ubuntu
+    __Linux-based distribution, typically Ubuntu__.
 
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
 
-a. Option 1 is 2 cores, 4 GB RAM, 32 GB SSD 
+    __a. Option 1 is 2 cores, 4 GB RAM, 32 GB SSD__.
 
-b. Option 2 is 4 cores, 8 GB RAM, 64 GB SSD
+    __b. Option 2 is 4 cores, 8 GB RAM, 64 GB SSD__.
 
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
-```bash
-The changes are save and versioned allow to keep track modifications over time. This ensure backup of the work are safeguarded against data loss due to failures
-```
+
+    __The changes are save and versioned allow to keep track modifications over time. This ensure backup of the work are safeguarded against data loss due to failures__.
+
 
 ## Exploring the Terminal
 
@@ -346,14 +346,12 @@ Linux codespaces-97fe80 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08
 ```
 
 11. What is the available free memory in the system. ***(1 mark)*** 
-```bash
-6.1 GiB
-```
+
+    __6.1 GiB__.
 
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
-```bash
-20 GiB
-```
+
+    __20 GiB__.
 
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
 ```bash
@@ -361,24 +359,20 @@ Linux codespaces-97fe80 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08
 ```
 
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
-```bash
-'ls' lists files and directories in the current directory while 'ls -asl' provides a details listing that includes file permissions ownership, size in blocks and modification time
-```
+
+    __'ls' lists files and directories in the current directory while 'ls -asl' provides a details listing that includes file permissions ownership, size in blocks and modification time__.
 
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
-```bash
-2560 4K pages
-```
+
+    __2560 4K pages__.
 
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
-```bash
-Processor 0 is 3012.583 MHz and Processor 1 is 3059.232 MHz
-```
+
+    __Processor 0 is 3012.583 MHz and Processor 1 is 3059.232 MHz__.
 
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
-```bash
-Process with PID 581 running the 'node' command using 1.7% CPU and 4.1% memory
-```
+
+    __Process with PID 581 running the 'node' command using 1.7% CPU and 4.1% memory__.
 
 ## Running your own container instance.
 
@@ -446,14 +440,12 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ***Questions:***
 
 1. Are files in the container persistent. Why not?. ***(1 mark)*** 
-```bash
-Files in a container are not persistent. Any changes made to the file system during the container's runtime are lost when the container is stopped or removed.
-```
+
+    __Files in a container are not persistent. Any changes made to the file system during the container's runtime are lost when the container is stopped or removed__.
 
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
-```bash
-Yes. we can run multiple instance of debian linux simultaneously. Each container contain its own file system, network and processess. We can use different container names to distinguish each container.
-```
+
+    __Yes. we can run multiple instance of debian linux simultaneously. Each container contain its own file system, network and processess. We can use different container names to distinguish each container__.
 
 ## Running your own container with persistent storage
 
@@ -473,9 +465,9 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 ***Questions:***
 
 1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** 
-```bash
-The file 'hello.txt' in docker container on the host virtual machine is owned by the 'root' user and belongs to the 'root' group.
-```
+
+    __The file 'hello.txt' in docker container on the host virtual machine is owned by the 'root' user and belongs to the 'root' group__.
+
 ```bash
 @aimannab10 ➜ /workspaces/OSProject-Git/myroot/myroot (main) $ ls -l /workspaces/OSProject/myroot
 total 0
@@ -486,8 +478,9 @@ total 0
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
-
 ```
+__Yes__. 
+
 ```bash
 @aimannab10 ➜ /workspaces/OSProject-Git (main) $ ls -l /workspaces/OSProject/myroot
 total 0
@@ -554,10 +547,14 @@ docker run -itd --net rednet --name c2 busybox sh
 ***Questions:***
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** 
-```bash
-BusyBox: Software suite that provides several Unix utilities in a single executable file. It is commonly used in Docker containers because it provides essential tools in a lightweight package, reducing the container's footprint and improving performance.
 
-Docker '--name' command switch: The --name command switch in Docker is used to assign a specific name to a container. By default, Docker assigns a random, often whimsical name to each container if a name is not explicitly provided.
+BusyBox
+```bash
+Software suite that provides several Unix utilities in a single executable file. It is commonly used in Docker containers because it provides essential tools in a lightweight package, reducing the container's footprint and improving performance.
+```
+Docker '--name' command switch 
+```bash
+The --name command switch in Docker is used to assign a specific name to a container. By default, Docker assigns a random, often whimsical name to each container if a name is not explicitly provided.
 ```
 
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
@@ -572,9 +569,9 @@ b9e51ede2e06   bridge    bridge    local
 ```
 
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** 
-```bash
-Bluenet
 
+__Bluenet__
+```bash
 @aimannab10 ➜ /workspaces/OSProject-Git (main) $ docker inspect c1
 [
     {
@@ -774,10 +771,8 @@ Bluenet
     }
 ]
 ```
-
+__Rednet__
 ```bash
-Rednet
-
 @aimannab10 ➜ /workspaces/OSProject-Git (main) $ docker inspect c2
 [
     {
@@ -984,9 +979,8 @@ Network address c2: 172.19.0.2
 ```
 
 5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
-```bash
-No
-```
+
+__No__
 ```bash
 @aimannab10 ➜ /workspaces/OSProject-Git (main) $ docker exec c1 ping c2
 ping: bad address 'c2'
@@ -1003,9 +997,8 @@ docker exec c1 ping c2
 ***Questions:***
 
 1. Are you able to ping? Show your output . ***(1 mark)*** 
-```bash
-Yes
-```
+
+__Yes__
 ```bash
 @aimannab10 ➜ /workspaces/OSProject-Git (main) $ docker exec c1 ping c2
 PING c2 (172.20.0.3): 56 data bytes
@@ -1113,9 +1106,8 @@ PING c2 (172.20.0.3): 56 data bytes
 ```
 
 2. What is different from the previous ping in the section above? ***(1 mark)*** 
-```bash
-The difference between the two ping attempts is that the initial ping fails due to network isolation, while the second ping succeeds due to the bridging network (bridgenet) enabling communication between the previously isolated containers.
-```
+
+__The difference between the two ping attempts is that the initial ping fails due to network isolation, while the second ping succeeds due to the bridging network (bridgenet) enabling communication between the previously isolated containers__.
 
 ## Intermediate Level (10 marks bonus)
 
