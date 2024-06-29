@@ -514,6 +514,7 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** 
 
 Permission: drwxrwxrwx+
+
 Owner: Root
 ```bash
 @aimannab10 ➜ /workspaces/OSProject-Git (main) $ docker exec -it 111337b18742 bash
