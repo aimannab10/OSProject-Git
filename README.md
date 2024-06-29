@@ -1258,10 +1258,20 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __The output of step 5 above is Server Error. This is because the nodejs-container cannot connect to the mysql-container. The error occurs because the nodejsnet and mysqlnet are not bridged together and on a separate Docker networks. To repair this, we need to bridge the Docker networks.__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
-
-
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** __The output of step 5 above is Server Error. This is because the nodejs-container cannot connect to the mysql-container. The error occurs because the nodejsnet and mysqlnet are not bridged together and on a separate Docker networks. To repair this, we need to bridge the Docker networks__.
+2. Show the instruction needed to make this work. ***(1 mark)*** __We got server error but there is some ways to try to fix it
+Rebuild and and run Docker containers again
+```sh
+docker build -t nodejs-app .
+docker run --name mysql-container --network mysqlnet -e MYSQL_ROOT_PASSWORD=rootpassword -e MYSQL_DATABASE=mydatabase -e MYSQL_USER=myuser -e MYSQL_PASSWORD=mypassword -d mysql:latest
+docker run --name nodejs-container --network nodejsnet -p 3000:3000 -d nodejs-app
+```
+Connect the docker networks
+```sh
+docker network connect mysqlnet nodejs-container
+docker network connect nodejsnet mysql-container
+```
+And test the applications again__.
 
 ## What to submit
 
