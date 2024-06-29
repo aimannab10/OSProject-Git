@@ -5,8 +5,8 @@ Group Name: __Git__
 Section: __2__
 
 Team Mates:
-1. __Aiman Nabil Bin Johan__ __2210205__
-2. __Aliff Azmeer Hakim Bin Azmin__ __2217777__
+1. __Aiman Nabil Bin Johan__ __2217777__
+2. __Aliff Azmeer Hakim Bin Azmin__ __2210205__
 3. __Amirul Hilmi Bin Hanizam__ __2218665__
 
 ## Rules
